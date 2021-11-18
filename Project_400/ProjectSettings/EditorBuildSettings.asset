@@ -8,5 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/David/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
+<<<<<<< HEAD
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 23e2bcd8e24aab848a4d41a33afd48aa, type: 2}
+=======
+  m_configObjects: {}
+>>>>>>> parent of 3831597 (Setting up Basic Movement)
