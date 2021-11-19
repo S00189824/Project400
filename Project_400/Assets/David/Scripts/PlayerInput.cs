@@ -41,6 +41,14 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""CameraMovement"",
+                    ""type"": ""Value"",
+                    ""id"": ""6bf98208-fb2b-4e36-af3a-c98ca26e4692"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -63,17 +71,6 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Run"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""5a46ad25-6ec9-438b-b68e-ce6322e3f51a"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""KeyboardMovement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -131,6 +128,17 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                     ""action"": ""KeyboardMovement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""df11f8aa-65c9-4220-9200-f7582bcd49f2"",
+                    ""path"": ""<Gamepad>/rightStick"",
+                    ""interactions"": ""Press(behavior=2)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraMovement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -142,6 +150,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
         m_CharacterControls_Movement = m_CharacterControls.FindAction("Movement", throwIfNotFound: true);
         m_CharacterControls_Run = m_CharacterControls.FindAction("Run", throwIfNotFound: true);
         m_CharacterControls_KeyboardMovement = m_CharacterControls.FindAction("KeyboardMovement", throwIfNotFound: true);
+        m_CharacterControls_CameraMovement = m_CharacterControls.FindAction("CameraMovement", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -194,6 +203,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
     private readonly InputAction m_CharacterControls_Movement;
     private readonly InputAction m_CharacterControls_Run;
     private readonly InputAction m_CharacterControls_KeyboardMovement;
+    private readonly InputAction m_CharacterControls_CameraMovement;
     public struct CharacterControlsActions
     {
         private @PlayerInput m_Wrapper;
@@ -201,6 +211,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
         public InputAction @Movement => m_Wrapper.m_CharacterControls_Movement;
         public InputAction @Run => m_Wrapper.m_CharacterControls_Run;
         public InputAction @KeyboardMovement => m_Wrapper.m_CharacterControls_KeyboardMovement;
+        public InputAction @CameraMovement => m_Wrapper.m_CharacterControls_CameraMovement;
         public InputActionMap Get() { return m_Wrapper.m_CharacterControls; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -219,6 +230,9 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                 @KeyboardMovement.started -= m_Wrapper.m_CharacterControlsActionsCallbackInterface.OnKeyboardMovement;
                 @KeyboardMovement.performed -= m_Wrapper.m_CharacterControlsActionsCallbackInterface.OnKeyboardMovement;
                 @KeyboardMovement.canceled -= m_Wrapper.m_CharacterControlsActionsCallbackInterface.OnKeyboardMovement;
+                @CameraMovement.started -= m_Wrapper.m_CharacterControlsActionsCallbackInterface.OnCameraMovement;
+                @CameraMovement.performed -= m_Wrapper.m_CharacterControlsActionsCallbackInterface.OnCameraMovement;
+                @CameraMovement.canceled -= m_Wrapper.m_CharacterControlsActionsCallbackInterface.OnCameraMovement;
             }
             m_Wrapper.m_CharacterControlsActionsCallbackInterface = instance;
             if (instance != null)
@@ -232,6 +246,9 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                 @KeyboardMovement.started += instance.OnKeyboardMovement;
                 @KeyboardMovement.performed += instance.OnKeyboardMovement;
                 @KeyboardMovement.canceled += instance.OnKeyboardMovement;
+                @CameraMovement.started += instance.OnCameraMovement;
+                @CameraMovement.performed += instance.OnCameraMovement;
+                @CameraMovement.canceled += instance.OnCameraMovement;
             }
         }
     }
@@ -241,5 +258,6 @@ public class @PlayerInput : IInputActionCollection, IDisposable
         void OnMovement(InputAction.CallbackContext context);
         void OnRun(InputAction.CallbackContext context);
         void OnKeyboardMovement(InputAction.CallbackContext context);
+        void OnCameraMovement(InputAction.CallbackContext context);
     }
 }

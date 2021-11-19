@@ -28,6 +28,14 @@
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "CameraMovement",
+                    "type": "Value",
+                    "id": "6bf98208-fb2b-4e36-af3a-c98ca26e4692",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -50,17 +58,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Run",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "5a46ad25-6ec9-438b-b68e-ce6322e3f51a",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "KeyboardMovement",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -118,6 +115,17 @@
                     "action": "KeyboardMovement",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "df11f8aa-65c9-4220-9200-f7582bcd49f2",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CameraMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
