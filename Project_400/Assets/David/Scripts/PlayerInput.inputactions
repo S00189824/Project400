@@ -3,12 +3,12 @@
     "maps": [
         {
             "name": "CharacterControls",
-            "id": "784864da-13c7-4b69-901e-e1d768584691",
+            "id": "7dfec399-d279-4e9a-a5ce-1cad3e866ef4",
             "actions": [
                 {
                     "name": "Movement",
                     "type": "Value",
-                    "id": "5a4eb57a-7c85-471a-a840-20655500467f",
+                    "id": "b42230cf-8b7a-4e11-aa73-f80634d4296a",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
@@ -16,8 +16,24 @@
                 {
                     "name": "Run",
                     "type": "Button",
-                    "id": "f46b679c-bffb-4e89-ace8-ed92e155f81c",
+                    "id": "a69dcafd-cea1-4254-b23a-cf10f05ccc10",
                     "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "KeyboardMovement",
+                    "type": "Value",
+                    "id": "19f74b99-e1db-4db6-9057-8532f87a2721",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "CameraMovement",
+                    "type": "Value",
+                    "id": "6bf98208-fb2b-4e36-af3a-c98ca26e4692",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": ""
                 }
@@ -25,7 +41,7 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "88c0c15c-317b-4d7c-948e-d32320ab911e",
+                    "id": "d90cca81-bbc8-4e0b-b2c3-3f34e6a4f63e",
                     "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "StickDeadzone",
@@ -36,12 +52,78 @@
                 },
                 {
                     "name": "",
-                    "id": "5f09c6c1-cdee-4cd1-a449-ede86e29a294",
+                    "id": "9e84ea2b-bec3-4b17-bc52-c63eacc9cf91",
                     "path": "<Gamepad>/leftShoulder",
                     "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "",
                     "action": "Run",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "29f3bf38-701f-4471-b178-3ad5cc7c4cbd",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyboardMovement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "d49a3b9a-5e01-4245-84b5-fc0c2aa81d3b",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyboardMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "c004fb25-4aff-4a95-bc9e-128c7404e156",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyboardMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "f65363ad-9c81-4115-9819-4cb8a909c728",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyboardMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "326f487d-4c16-4c0a-825c-b4e7d9fc69c8",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyboardMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "df11f8aa-65c9-4220-9200-f7582bcd49f2",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CameraMovement",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
