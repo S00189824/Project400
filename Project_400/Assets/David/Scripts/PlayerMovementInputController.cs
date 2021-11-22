@@ -18,11 +18,11 @@ public class PlayerMovementInputController : MonoBehaviour
 
     public float WalkingSpeed;
     public float RunningSpeed;
+    public float rotationSpeed;
     Vector3 directionToMoveThisFrame;
     Vector3 velocity;
     Vector3 lastVelocity;
     Vector2 currentMovement;
-    Vector2 cameraMovement;
     bool movementPressed;
     bool runPressed;
 
@@ -31,7 +31,6 @@ public class PlayerMovementInputController : MonoBehaviour
 
     private void Awake()
     {
-        //CinemachineCore.GetInputAxis += ReadAxis;
 
         input = new PlayerInput();
         //input.CharacterControls.CameraMovement.performed += ctx =>
@@ -49,7 +48,9 @@ public class PlayerMovementInputController : MonoBehaviour
 
     void OnMovementEvent(InputAction.CallbackContext ctx)
     {
-        currentMovement = ctx.ReadValue<Vector2>();
+        currentMovement = ctx.action.ReadValue<Vector2>();
+
+        //Handles Movement Animations
         movementPressed = currentMovement.x != 0 || currentMovement.y != 0;
     }
 
@@ -74,7 +75,7 @@ public class PlayerMovementInputController : MonoBehaviour
         HandleMovement();
         handleRoation();
 
-        
+
     }
 
     void handleRoation()
@@ -93,9 +94,21 @@ public class PlayerMovementInputController : MonoBehaviour
         bool isRunning = animator.GetBool(isRunningHash);
         bool isWalking = animator.GetBool(isWalkingHash);
 
-            directionToMoveThisFrame = camera.transform.TransformDirection(directionToMoveThisFrame);
-            directionToMoveThisFrame = new Vector3(currentMovement.x, 0, currentMovement.y) * (runPressed ? RunningSpeed : WalkingSpeed) * Time.deltaTime;
-            characterController.Move(directionToMoveThisFrame);
+        //if(currentMovement != Vector2.zero)
+        //{
+        //    float targetAngle = Mathf.Atan2(directionToMoveThisFrame.x, directionToMoveThisFrame.y) * (runPressed ? RunningSpeed : WalkingSpeed) * Time.deltaTime;
+        //    Quaternion rotation = Quaternion.Euler(0f, targetAngle, 0f);
+        //    transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * rotationSpeed);
+        //    //currentMovement = directionToMoveThisFrame;
+
+        //    characterController.Move(directionToMoveThisFrame);
+        //}
+
+        directionToMoveThisFrame = camera.transform.TransformDirection(currentMovement);
+        directionToMoveThisFrame = new Vector3(currentMovement.x, 0, currentMovement.y) * (runPressed ? RunningSpeed : WalkingSpeed) * Time.deltaTime;
+        characterController.Move(directionToMoveThisFrame);
+
+
 
         if (movementPressed && !isWalking)
         {
@@ -133,7 +146,7 @@ public class PlayerMovementInputController : MonoBehaviour
     {
         Debug.Log("Do Walk");
 
-        
+
     }
 
     private void OnDestroy()
