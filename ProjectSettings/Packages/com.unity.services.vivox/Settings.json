@@ -1,12 +1,35 @@
 {
-    "m_Name": "Settings",
-    "m_Path": "ProjectSettings/Packages/com.unity.services.vivox/Settings.json",
     "m_Dictionary": {
         "m_DictionaryValues": [
             {
                 "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "isEnvironmentCustom",
                 "value": "{\"m_Value\":true}"
+            },
+            {
+                "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                "key": "tokenKey",
+                "value": "{\"m_Value\":\"jhkIJZYgJJP5JEYDuicfiYLb77hkiU5u\"}"
+            },
+            {
+                "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                "key": "tokenIssuer",
+                "value": "{\"m_Value\":\"57725-proje-60525-test\"}"
+            },
+            {
+                "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                "key": "server",
+                "value": "{\"m_Value\":\"https://unity.vivox.com/appconfig/57725-proje-60525-test\"}"
+            },
+            {
+                "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                "key": "domain",
+                "value": "{\"m_Value\":\"mtu1xp.vivox.com\"}"
+            },
+            {
+                "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                "key": "pulledCredentialProjectId",
+                "value": "{\"m_Value\":\"12a20394-7655-40bd-80c8-8e0a5103f4fe\"}"
             }
         ]
     }

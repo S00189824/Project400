@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.13f1 (71691879b7f5) revision 7432472'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19044.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 32683 MB
+OS: 'Windows 10 Pro; OS build 19044.1466; Version 2009; 64bit' Language: 'en' Physical Memory: 32683 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ C:/Users/David/Documents/Github/Project400
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51106
+56090
 Successfully changed project path to: C:/Users/David/Documents/Github/Project400
 C:/Users/David/Documents/Github/Project400
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 86.12 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 86.03 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.13f1 (71691879b7f5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Resources/UnitySubsystems
@@ -30,44 +30,44 @@ Direct3D:
     Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
     Vendor:   
     VRAM:     5991 MB
-    Driver:   30.0.14.7196
+    Driver:   30.0.14.9729
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56276
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56396
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002918 seconds.
+Registered in 0.002512 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 100.38 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 75.84 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.377 seconds
+- Completed reload, in  2.460 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.029125 seconds.
+Registered in 0.013177 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 115.16 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 78.62 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.926 seconds
+- Completed reload, in  2.293 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.85 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.79 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5687 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 223.1 MB.
-System memory in use after: 223.5 MB.
+Unloading 5475 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.5 MB.
+System memory in use after: 219.9 MB.
 
-Unloading 174 unused Assets to reduce memory usage. Loaded Objects now: 6085.
-Total: 4.372200 ms (FindLiveObjects: 0.488000 ms CreateObjectMapping: 0.363300 ms MarkObjects: 3.325700 ms  DeleteObjects: 0.194000 ms)
+Unloading 166 unused Assets to reduce memory usage. Loaded Objects now: 5880.
+Total: 3.728900 ms (FindLiveObjects: 0.435400 ms CreateObjectMapping: 0.286600 ms MarkObjects: 2.858200 ms  DeleteObjects: 0.147700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -81,9 +81,641 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/David/Authentication/Identity.cs
-  artifactKey: Guid(80b22ac207a00b244aa00f457fefd478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/David/Authentication/Identity.cs using Guid(80b22ac207a00b244aa00f457fefd478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a7d024c748a83aeeda1639c4f0714dc') in 0.063688 seconds 
-  Import took 0.073979 seconds .
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Sprites/Field.png
+  artifactKey: Guid(58d7f2ef1eab3b94b9df868d43e72dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Sprites/Field.png using Guid(58d7f2ef1eab3b94b9df868d43e72dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e49371395700a55713437b37c895f504') in 0.132244 seconds 
+  Import took 0.139061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Sprites/SpeakerIconMuted.png
+  artifactKey: Guid(643b7e6b269039e46b23502f57922b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Sprites/SpeakerIconMuted.png using Guid(643b7e6b269039e46b23502f57922b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d3363da299b301c7502fb37bcec6792') in 0.025645 seconds 
+  Import took 0.032234 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/largeButton_square.png
+  artifactKey: Guid(fc4a5d4750fd0411fa89d829905f250b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/largeButton_square.png using Guid(fc4a5d4750fd0411fa89d829905f250b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10a8f7f9dfce4b78a22c057bf1ce67f7') in 0.017155 seconds 
+  Import took 0.024828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/MohawkIcon.png
+  artifactKey: Guid(84d603330db8f4dc68dd0533da5b7f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/MohawkIcon.png using Guid(84d603330db8f4dc68dd0533da5b7f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '960918a9c9af89e33a330bd1e29ab907') in 0.015547 seconds 
+  Import took 0.022893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Game/BouncyBombWhite.png
+  artifactKey: Guid(298f504c385824d2ba4d29c3eff0ba45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Game/BouncyBombWhite.png using Guid(298f504c385824d2ba4d29c3eff0ba45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '818ae76f563802e8490c4fcec2543c64') in 0.032836 seconds 
+  Import took 0.040021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/medalInactive.png
+  artifactKey: Guid(f4dc55d335a0a486c88ac6bea28bbdc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/medalInactive.png using Guid(f4dc55d335a0a486c88ac6bea28bbdc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b029255a03db848f86f7762a9c8841e2') in 0.016195 seconds 
+  Import took 0.023475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/HeartBalloonsIcon.png
+  artifactKey: Guid(3d2826a5104884a9585cab9e85b598e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/HeartBalloonsIcon.png using Guid(3d2826a5104884a9585cab9e85b598e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb0dcb21979dfed4c15801b2a8eba784') in 0.020948 seconds 
+  Import took 0.028542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Game/PauseButton.png
+  artifactKey: Guid(778efdbe43151402aa93178988973064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Game/PauseButton.png using Guid(778efdbe43151402aa93178988973064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '218431b98f3898a73687e0743435099b') in 0.017103 seconds 
+  Import took 0.026141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Game/GappedOutlineWhite.png
+  artifactKey: Guid(39397d9d4b5f448329396647c2da7593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Game/GappedOutlineWhite.png using Guid(39397d9d4b5f448329396647c2da7593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc75af511c1a584ac4235b15c3bc91d0') in 0.027863 seconds 
+  Import took 0.035617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/panelClean.png
+  artifactKey: Guid(5cd8b1f5e7726412e83880425d2ce65a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/panelClean.png using Guid(5cd8b1f5e7726412e83880425d2ce65a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a20c041458321a61b88ab88932d3531') in 0.017885 seconds 
+  Import took 0.026234 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/David/Art_UI/Art/Icons/Volume/mutedIcon.png
+  artifactKey: Guid(bf5910b0ba2403a448a96cb6f77b611c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/David/Art_UI/Art/Icons/Volume/mutedIcon.png using Guid(bf5910b0ba2403a448a96cb6f77b611c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c41c0c7c757e0a369c3f2b8bf661392') in 0.052562 seconds 
+  Import took 0.059911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/largeButton.png
+  artifactKey: Guid(c4cd5e08c9fb44e8faf576db8170017c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/largeButton.png using Guid(c4cd5e08c9fb44e8faf576db8170017c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '412edfd82346b8aced382d5c3d08335f') in 0.020692 seconds 
+  Import took 0.027742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/slider.png
+  artifactKey: Guid(4a2c4e5fb655c40e89e97007c4413dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/slider.png using Guid(4a2c4e5fb655c40e89e97007c4413dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7fa18e7199817c5cde1131984d0e73e') in 0.015007 seconds 
+  Import took 0.022414 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/EyeBrowsIcon.png
+  artifactKey: Guid(784d7c51ec22241adb58e91b95855c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/EyeBrowsIcon.png using Guid(784d7c51ec22241adb58e91b95855c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf96fc4d7d431cf3ebeee22665b4b7e8') in 0.017484 seconds 
+  Import took 0.025405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/lockedClean.png
+  artifactKey: Guid(2e59260c5ec144304bf9ff5cbde81256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/lockedClean.png using Guid(2e59260c5ec144304bf9ff5cbde81256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dea956b1d85c863f6a2227222b8885cd') in 0.018516 seconds 
+  Import took 0.026458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Sprites/HealthWheel.png
+  artifactKey: Guid(c7dd97e9cd879304795b366cbf187bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Sprites/HealthWheel.png using Guid(c7dd97e9cd879304795b366cbf187bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9866e3638e8c4a1e21e42fc0fd315296') in 0.017139 seconds 
+  Import took 0.024049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/heart.png
+  artifactKey: Guid(2cd08b3231b0b4870ab51a6e9c18930a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/heart.png using Guid(2cd08b3231b0b4870ab51a6e9c18930a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba9349cfdd7d7001a9bd74a20f6c09d1') in 0.031773 seconds 
+  Import took 0.039417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/GogglesIcon.png
+  artifactKey: Guid(74389791f3b9545fcb3a6ae29e3f853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/GogglesIcon.png using Guid(74389791f3b9545fcb3a6ae29e3f853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f387bb3dc5ce838e61ea4d7bbd894736') in 0.027957 seconds 
+  Import took 0.036134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/BalloonsIcon.png
+  artifactKey: Guid(8a59aa35e89884a8db727c9858fca1de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/BalloonsIcon.png using Guid(8a59aa35e89884a8db727c9858fca1de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8160b2bdbdba9e4c978ee06c85c9799c') in 0.028762 seconds 
+  Import took 0.036325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/Radio_Button_ON.png
+  artifactKey: Guid(e69f165f361b2434f929d40648ae499f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/Radio_Button_ON.png using Guid(e69f165f361b2434f929d40648ae499f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91f83eef56057cf104f8760e259de14f') in 0.016357 seconds 
+  Import took 0.023728 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/buttonNext_pressed.png
+  artifactKey: Guid(74ac37cb8c41b45d294f87b25d76dbf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/buttonNext_pressed.png using Guid(74ac37cb8c41b45d294f87b25d76dbf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33ff938eec91a280f3217be5e99f3ad4') in 0.016750 seconds 
+  Import took 0.027632 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Sprites/SpeakerIconNotSpeaking.png
+  artifactKey: Guid(11e2a2782c806b74b86c4621628ae30c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Sprites/SpeakerIconNotSpeaking.png using Guid(11e2a2782c806b74b86c4621628ae30c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad1c1b7b1a20e1d33ba85b5cfb817e89') in 0.031373 seconds 
+  Import took 0.040795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/iconDecorate.png
+  artifactKey: Guid(704c734bb4a23475781bf1a069256ebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/iconDecorate.png using Guid(704c734bb4a23475781bf1a069256ebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3f8af59b69002a924a7ac30ffe1995e') in 0.015109 seconds 
+  Import took 0.022577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/panelSmall.png
+  artifactKey: Guid(8b61b240ab65e45958c52db554fe95a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/panelSmall.png using Guid(8b61b240ab65e45958c52db554fe95a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55ef2e4f5cdd84580fd9eb23edc7eeae') in 0.015366 seconds 
+  Import took 0.023041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/largeButton_white_square.png
+  artifactKey: Guid(04ff856b0ff6a4d1ab240fc0929ef4ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/largeButton_white_square.png using Guid(04ff856b0ff6a4d1ab240fc0929ef4ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05e0d1062481f9a5486e789879382c35') in 0.014698 seconds 
+  Import took 0.023294 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001015 seconds.
+  path: Assets/David/Art_UI/Art/Icons/rename_icon.png
+  artifactKey: Guid(36961dea3482e5842938e6c4d5d8570a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/David/Art_UI/Art/Icons/rename_icon.png using Guid(36961dea3482e5842938e6c4d5d8570a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc753240d10e4b59e7dd2350e28692ab') in 0.015145 seconds 
+  Import took 0.022789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Game/ClusterBombWhite.png
+  artifactKey: Guid(94721507521fa4cd9ae0590cd6120f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Game/ClusterBombWhite.png using Guid(94721507521fa4cd9ae0590cd6120f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '733e14d44b21368d4b29c5f10e23c643') in 0.018091 seconds 
+  Import took 0.025941 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/iconMedals.png
+  artifactKey: Guid(8e0ea16793b6c496f8ff1044545758ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/iconMedals.png using Guid(8e0ea16793b6c496f8ff1044545758ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42aacdf29aee31521d671e339b6e2c73') in 0.015671 seconds 
+  Import took 0.023832 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/24BitGames.png
+  artifactKey: Guid(93c6a2715693c4cd9b79893146dbd2a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/24BitGames.png using Guid(93c6a2715693c4cd9b79893146dbd2a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3644c3f89163d7452fb5212080ac2e9e') in 0.016193 seconds 
+  Import took 0.023974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/panelHeading.png
+  artifactKey: Guid(d83c92f5025aa4bf9a08455b21f294db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/panelHeading.png using Guid(d83c92f5025aa4bf9a08455b21f294db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e78aebf46841a2cd3bb977bcc4af05e') in 0.018861 seconds 
+  Import took 0.026397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/David/Art_UI/Art/Borders/button_highlights.png
+  artifactKey: Guid(75b782ed746470e48b4f79531b8d3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/David/Art_UI/Art/Borders/button_highlights.png using Guid(75b782ed746470e48b4f79531b8d3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35e20e99210614959d40c43b8e6f3ea8') in 0.013717 seconds 
+  Import took 0.020861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/David/Art_UI/Art/Borders/roundRect.png
+  artifactKey: Guid(df079b79a31b7ee458df2e5bbe02299a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/David/Art_UI/Art/Borders/roundRect.png using Guid(df079b79a31b7ee458df2e5bbe02299a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6f108399697b4456f51ab447618adaf') in 0.014578 seconds 
+  Import took 0.021984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/David/Art_UI/Art/Borders/inner_glow.png
+  artifactKey: Guid(8d66f9f2b53275042ba30b17a7ede707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/David/Art_UI/Art/Borders/inner_glow.png using Guid(8d66f9f2b53275042ba30b17a7ede707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '624e5b9b16d0223fb61ce52b3d9209d3') in 0.039638 seconds 
+  Import took 0.047447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/David/Art_UI/Art/Icons/Volume/micIcon.png
+  artifactKey: Guid(d98c1d9f6f85f6e4cb4a0552d0452b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/David/Art_UI/Art/Icons/Volume/micIcon.png using Guid(d98c1d9f6f85f6e4cb4a0552d0452b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00333fe6329457915a15cf18853c7a88') in 0.046730 seconds 
+  Import took 0.054247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/locked.png
+  artifactKey: Guid(322781518ee644c8c97ba31f7ded5eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/locked.png using Guid(322781518ee644c8c97ba31f7ded5eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '601fe2dc75aebe86513354b13b9259f8') in 0.017171 seconds 
+  Import took 0.024768 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/button.png
+  artifactKey: Guid(dae83dd9333fc4e3da141675f6b5e4e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/button.png using Guid(dae83dd9333fc4e3da141675f6b5e4e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0cc5fb904d6a4aedaf50891c00d0618') in 0.023742 seconds 
+  Import took 0.033829 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/PropCapIcon.png
+  artifactKey: Guid(fc02a8d3a3eee4ad2ae20f9ca2c10c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/PropCapIcon.png using Guid(fc02a8d3a3eee4ad2ae20f9ca2c10c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0c674d7ebea9b8e6d475ae2898f54de') in 0.022559 seconds 
+  Import took 0.031360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/David/Art_UI/Art/Icons/Crown.png
+  artifactKey: Guid(57c53a150c76b1f4c9fe27ee2b9a1d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/David/Art_UI/Art/Icons/Crown.png using Guid(57c53a150c76b1f4c9fe27ee2b9a1d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3caec8bbbbb9adac916fa336098f91d') in 0.065099 seconds 
+  Import took 0.072720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Game/AimArrow.png
+  artifactKey: Guid(a5edbd9c1b7224403b7d72a318061c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Game/AimArrow.png using Guid(a5edbd9c1b7224403b7d72a318061c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b380d81623b6c97ef0ec81db18728f0') in 0.029737 seconds 
+  Import took 0.037838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Sprites/Button.png
+  artifactKey: Guid(5c3872ff5d558c641b2be0521f37ac29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Sprites/Button.png using Guid(5c3872ff5d558c641b2be0521f37ac29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f9fcdb566c67a1fb89c2d07322724f5') in 0.012254 seconds 
+  Import took 0.019473 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Game/ControlsInside.png
+  artifactKey: Guid(2cede11cfc75b4b98bfd63de21528c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Game/ControlsInside.png using Guid(2cede11cfc75b4b98bfd63de21528c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '100db6e96bfc5f1bc8ed64b1eb55beda') in 0.019667 seconds 
+  Import took 0.027401 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/iconSpeed.png
+  artifactKey: Guid(edf47f252cf3849508fb8878885acc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/iconSpeed.png using Guid(edf47f252cf3849508fb8878885acc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0735860de43500625d26a2e8cc217e52') in 0.013295 seconds 
+  Import took 0.020854 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/panelMain.png
+  artifactKey: Guid(aa2471c03908843298fc06ba9da693dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/panelMain.png using Guid(aa2471c03908843298fc06ba9da693dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e089007c01c870128a0ca92114e10d6') in 0.024917 seconds 
+  Import took 0.031894 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/iconTopsecret.png
+  artifactKey: Guid(471cbcc8e1a6040528774f8500c5027f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/iconTopsecret.png using Guid(471cbcc8e1a6040528774f8500c5027f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82e11d6163be626c6975de22ad9885f5') in 0.016207 seconds 
+  Import took 0.023686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/MoustacheIcon.png
+  artifactKey: Guid(528cb202238ff467cb179c07d5c47c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/MoustacheIcon.png using Guid(528cb202238ff467cb179c07d5c47c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c16056adcd7a4c644a32e1d762bb7cc') in 0.015119 seconds 
+  Import took 0.022856 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/button_pressed.png
+  artifactKey: Guid(f01e45a1aeb9a4e03a6beae3f0c3e400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/button_pressed.png using Guid(f01e45a1aeb9a4e03a6beae3f0c3e400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a962fdc15734fa1ce3db2c120fbc8926') in 0.013627 seconds 
+  Import took 0.020883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/David/Art_UI/Art/Borders/roundInput.png
+  artifactKey: Guid(692e13cdeeca42e47bc1860cce9b8aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/David/Art_UI/Art/Borders/roundInput.png using Guid(692e13cdeeca42e47bc1860cce9b8aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e087aec4fa28d8ac3ded05286fbe632') in 0.015295 seconds 
+  Import took 0.022898 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/button_disabled.png
+  artifactKey: Guid(af44d7f34e0d54a38bba836d523deb3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/button_disabled.png using Guid(af44d7f34e0d54a38bba836d523deb3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87a2977107c7cde2b4611dfbd2d9a4c1') in 0.019382 seconds 
+  Import took 0.026660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/buttonNext.png
+  artifactKey: Guid(d754e841e520b479d94e2616d603a304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/buttonNext.png using Guid(d754e841e520b479d94e2616d603a304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a395abede9f56ce38caed42334ee83fc') in 0.016746 seconds 
+  Import took 0.023910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/David/Art_UI/Art/Icons/Spinner/Spinner.png
+  artifactKey: Guid(7eb43e8205c10c846b4243bb963f4aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/David/Art_UI/Art/Icons/Spinner/Spinner.png using Guid(7eb43e8205c10c846b4243bb963f4aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a40053656171b56076938858bb9aabe4') in 0.053924 seconds 
+  Import took 0.061210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/panelFloating.png
+  artifactKey: Guid(1cccd2c2b29f947cabdbf08bba71dd22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/panelFloating.png using Guid(1cccd2c2b29f947cabdbf08bba71dd22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0504da9e889a33e1229aeccd1af3c64f') in 0.018238 seconds 
+  Import took 0.026319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/Coin.png
+  artifactKey: Guid(8cc28ce80f8ad453690b5824462729ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/Coin.png using Guid(8cc28ce80f8ad453690b5824462729ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1afd1238b911d53ee26cc75e7f8683ad') in 0.028579 seconds 
+  Import took 0.035883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Game/ControlsOutside.png
+  artifactKey: Guid(5756c16f0426046eabe51834418b086d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Game/ControlsOutside.png using Guid(5756c16f0426046eabe51834418b086d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ebf7dbad99f3a9507acede00b341918') in 0.016439 seconds 
+  Import took 0.024109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Game/MovementArrow.png
+  artifactKey: Guid(c5c8156bf4de94e72b123d10b4206655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Game/MovementArrow.png using Guid(c5c8156bf4de94e72b123d10b4206655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb694b556ef505b1ed9803f385f0cfec') in 0.014042 seconds 
+  Import took 0.020941 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/medalActive.png
+  artifactKey: Guid(b2e38aac7fe804fbbbb876ac69a29dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/medalActive.png using Guid(b2e38aac7fe804fbbbb876ac69a29dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fee5582de503016e428d8bcd3d52b25') in 0.013789 seconds 
+  Import took 0.020725 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/iconStar.png
+  artifactKey: Guid(0584050e6d43b42fe85bffd55c020a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/iconStar.png using Guid(0584050e6d43b42fe85bffd55c020a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '445aa64d577e40cce77675e513421d92') in 0.014994 seconds 
+  Import took 0.022696 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/CarrotIcon.png
+  artifactKey: Guid(3450bb592da2d40838aa70bfe3548e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/CarrotIcon.png using Guid(3450bb592da2d40838aa70bfe3548e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42e89abbc48b7c3a708b7ea6beae3ef7') in 0.014223 seconds 
+  Import took 0.021069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/largeButton_white.png
+  artifactKey: Guid(db4780e21938e437f96d7ebecc2857b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/largeButton_white.png using Guid(db4780e21938e437f96d7ebecc2857b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49d5043e49e83c527c784c36e88a9668') in 0.015790 seconds 
+  Import took 0.022903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/panelEmpty.png
+  artifactKey: Guid(3930b434e00334a73aad7e2415c0d817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/panelEmpty.png using Guid(3930b434e00334a73aad7e2415c0d817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ccdc740f914e92ae978351abc7e4c66') in 0.017165 seconds 
+  Import took 0.024901 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/HelmetIcon.png
+  artifactKey: Guid(b041c349ea64f4d9d871289d00c0dc1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/HelmetIcon.png using Guid(b041c349ea64f4d9d871289d00c0dc1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db565380358477d69fd50271dcfcc5ca') in 0.019269 seconds 
+  Import took 0.030243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/David/Art_UI/Art/Icons/Emotes/SmileIcon.png
+  artifactKey: Guid(7236d49fc9649dc44a67849a94ab3969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/David/Art_UI/Art/Icons/Emotes/SmileIcon.png using Guid(7236d49fc9649dc44a67849a94ab3969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21a5113323d9a9f45c31473f2e66d205') in 0.019404 seconds 
+  Import took 0.026796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/David/Art_UI/Art/Borders/shiny_button.png
+  artifactKey: Guid(3617dc3095430de4cb17dffa2acced31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/David/Art_UI/Art/Borders/shiny_button.png using Guid(3617dc3095430de4cb17dffa2acced31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db3b763ae502d12d9b9d04b1b4ce8de8') in 0.014131 seconds 
+  Import took 0.021374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/iconInfo.png
+  artifactKey: Guid(f589136b852a54553a1e572b8e2a40c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/iconInfo.png using Guid(f589136b852a54553a1e572b8e2a40c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a25b7e5b3cf414a6b8ca0cea6537bbd') in 0.015450 seconds 
+  Import took 0.022958 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/iconTank.png
+  artifactKey: Guid(f7ebe390691f34925a99a5e23b338396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/iconTank.png using Guid(f7ebe390691f34925a99a5e23b338396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bada5796611aae8936dc32a31089c65a') in 0.014393 seconds 
+  Import took 0.022571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/David/Art_UI/Art/Icons/Emotes/FrownIcon.png
+  artifactKey: Guid(bc8c0e2bc04ce93488efe4ea898047a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/David/Art_UI/Art/Icons/Emotes/FrownIcon.png using Guid(bc8c0e2bc04ce93488efe4ea898047a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '529a6b3ef278e3c306bb38bb5e017f63') in 0.014731 seconds 
+  Import took 0.022253 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/AnimalBalloonsIcon.png
+  artifactKey: Guid(7ee5486e6268149d1b8cb7877044b126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/AnimalBalloonsIcon.png using Guid(7ee5486e6268149d1b8cb7877044b126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21a38c2cf31085af51d111664c27164f') in 0.021735 seconds 
+  Import took 0.029125 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/buttonTeamColour.png
+  artifactKey: Guid(272aebfe3b41b401ab184a082fbd203e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/buttonTeamColour.png using Guid(272aebfe3b41b401ab184a082fbd203e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c418e68e588e632e4d728fdc2bdc6eb') in 0.015270 seconds 
+  Import took 0.022665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/CigarIcon.png
+  artifactKey: Guid(3c7b23e3b6edb4eaeb352601015e00d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/DecorationButtons/CigarIcon.png using Guid(3c7b23e3b6edb4eaeb352601015e00d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57d8bf155c9fbbcd011cc712b6125e3f') in 0.014903 seconds 
+  Import took 0.022454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Game/NitroWhite.png
+  artifactKey: Guid(9c8425849c85c4339a70cc1537ec1f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Game/NitroWhite.png using Guid(9c8425849c85c4339a70cc1537ec1f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea7dde99715399062d2f68dd902497ea') in 0.030484 seconds 
+  Import took 0.037808 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/background.png
+  artifactKey: Guid(f6b106ce8c0c143529db1802d3ff9e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/background.png using Guid(f6b106ce8c0c143529db1802d3ff9e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7a9e79a9b5622fb56bead361da1a4a8') in 0.061775 seconds 
+  Import took 0.069998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/David/Art_UI/Art/Icons/back_icon.png
+  artifactKey: Guid(4354914e98ed5184596c36700cb95cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/David/Art_UI/Art/Icons/back_icon.png using Guid(4354914e98ed5184596c36700cb95cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d1679888144b1f071787075dde668a4') in 0.014805 seconds 
+  Import took 0.022462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Sprites/AimArrow.png
+  artifactKey: Guid(41f39b7423d732d44b0967108a695bb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Sprites/AimArrow.png using Guid(41f39b7423d732d44b0967108a695bb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7578e7139e9a96127841b22e777d3920') in 0.013030 seconds 
+  Import took 0.020961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Game/Hand.png
+  artifactKey: Guid(b7c318ebb2b56487485131c8c28232cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Game/Hand.png using Guid(b7c318ebb2b56487485131c8c28232cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c5c28e663a86ce381b4d1974858f923') in 0.015765 seconds 
+  Import took 0.024523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Sprites/SpeakerIconVector.png
+  artifactKey: Guid(587c0ffb6d8294baaafb5491e9b639e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Sprites/SpeakerIconVector.png using Guid(587c0ffb6d8294baaafb5491e9b639e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '237852d592acc96563aed50de5e4debe') in 0.040894 seconds 
+  Import took 0.049062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/iconPlayertag.png
+  artifactKey: Guid(3957253ea5efc4d2889299012d239c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/iconPlayertag.png using Guid(3957253ea5efc4d2889299012d239c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c07c9cd23ae0913181522bcfdb48b0a') in 0.024289 seconds 
+  Import took 0.032237 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Sprites/SpeakerIconWhite.png
+  artifactKey: Guid(53e58ede9ee604a32afcd03ddada2978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Sprites/SpeakerIconWhite.png using Guid(53e58ede9ee604a32afcd03ddada2978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7094a0e66a677fd958f3975e7e65605') in 0.033079 seconds 
+  Import took 0.040471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/panelSmallHeading.png
+  artifactKey: Guid(5555c6f35ca2d41e18c2868e6ac22d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Shared/panelSmallHeading.png using Guid(5555c6f35ca2d41e18c2868e6ac22d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '695d76f7fc6fa83aec441d056b37e445') in 0.018332 seconds 
+  Import took 0.026970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/iconTurn.png
+  artifactKey: Guid(07930e036230a41e485c2feac65bb97f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Textures/UI/Menu/iconTurn.png using Guid(07930e036230a41e485c2feac65bb97f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f0e6b4e30e2bb8af37b2ac9e209407e') in 0.024034 seconds 
+  Import took 0.031642 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Sprites/SpeakerIconSpeaking.png
+  artifactKey: Guid(0640b514c129e42f2b9f781322b59182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Vivox/15.1.160000-pre.1/Chat Channel Sample/Assets/ChatChannelSample/Sprites/SpeakerIconSpeaking.png using Guid(0640b514c129e42f2b9f781322b59182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb23629ce077d9788d9519d0804b26f5') in 0.026549 seconds 
+  Import took 0.034831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.504962 seconds.
+  path: Assets/David/Scenes/SampleSceneLightingSettings.lighting
+  artifactKey: Guid(477cc4148fad3449482a3bc3178594e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/David/Scenes/SampleSceneLightingSettings.lighting using Guid(477cc4148fad3449482a3bc3178594e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca4f8c55d46a9eb94bcf8fdf97d8662d') in 0.008247 seconds 
+  Import took 0.016060 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
