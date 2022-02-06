@@ -146,7 +146,10 @@ public class PlayerMovementInputController : MonoBehaviour
     {
         Debug.Log("Do Walk");
 
+        currentMovement = obj.action.ReadValue<Vector2>();
 
+        //Handles Movement Animations
+        movementPressed = currentMovement.x != 0 || currentMovement.y != 0;
     }
 
     private void OnDestroy()

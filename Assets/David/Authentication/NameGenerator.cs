@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 
-namespace LobbyRelaySample
+namespace LobbyRelay
 {
     /// <summary>
     /// Just for fun, give a cute default player name if no name is provided, based on a hash of their anonymous ID.
