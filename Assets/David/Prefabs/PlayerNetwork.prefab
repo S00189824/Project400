@@ -217,7 +217,6 @@ GameObject:
   - component: {fileID: 3880174367969960328}
   - component: {fileID: 3880174367969960343}
   - component: {fileID: 3880174367969960340}
-  - component: {fileID: 3880174367969960339}
   - component: {fileID: 4313598407189274824}
   - component: {fileID: -7886335135706829470}
   - component: {fileID: -8693082384244640794}
@@ -282,64 +281,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1.06, z: 0}
---- !u!114 &3880174367969960339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3880174367969960329}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 365c6b2203085c04f95e1813f2260570, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11500000, guid: c59669becefc428428ec0edb02e7c97e, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: b42230cf-8b7a-4e11-aa73-f80634d4296a
-    m_ActionName: CharacterControls/Movement[/DualShock4GamepadHID/leftStick]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: a69dcafd-cea1-4254-b23a-cf10f05ccc10
-    m_ActionName: CharacterControls/Run[/DualShock4GamepadHID/leftShoulder]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 19f74b99-e1db-4db6-9057-8532f87a2721
-    m_ActionName: CharacterControls/KeyboardMovement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 6bf98208-fb2b-4e36-af3a-c98ca26e4692
-    m_ActionName: CharacterControls/CameraMovement[/DualShock4GamepadHID/rightStick]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: CharacterControls
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!114 &4313598407189274824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -380,9 +321,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 918cf5aeea0a4b147b68e1888881aaf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 3.5
+  walkSpeed: 3
   runSpeedOffset: 2
-  rotationSpeed: 1.5
+  rotationSpeed: 3.5
   defaultInitialPositionOnPlane: {x: -4, y: 4}
   networkPositionDirection:
     m_InternalValue: {x: 0, y: 0, z: 0}

@@ -2,7 +2,6 @@ using Unity.Netcode;
 using UnityEngine;
 
 [RequireComponent(typeof(NetworkObject))]
-
 public class PlayerControl : NetworkBehaviour
 {
     [SerializeField]
@@ -75,7 +74,6 @@ public class PlayerControl : NetworkBehaviour
 
     private void ClientVisuals()
     {
-        //checcking to see if player state is in sync with server
         if (oldPlayerState != networkPlayerState.Value)
         {
             oldPlayerState = networkPlayerState.Value;

@@ -219,8 +219,8 @@ GameObject:
   - component: {fileID: 3880174367969960340}
   - component: {fileID: 4313598407189274824}
   - component: {fileID: -7886335135706829470}
-  - component: {fileID: -7974465013400203992}
-  - component: {fileID: -4066726096454069003}
+  - component: {fileID: 3171163098727261446}
+  - component: {fileID: 4098144853098280424}
   m_Layer: 0
   m_Name: PlayerNetworkAuthorative
   m_TagString: Player
@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac8107a0dffa73741ae9d80c159575b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-7974465013400203992
+--- !u!114 &3171163098727261446
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -328,16 +328,16 @@ MonoBehaviour:
   SyncRotAngleX: 1
   SyncRotAngleY: 1
   SyncRotAngleZ: 1
-  SyncScaleX: 1
-  SyncScaleY: 1
-  SyncScaleZ: 1
+  SyncScaleX: 0
+  SyncScaleY: 0
+  SyncScaleZ: 0
   PositionThreshold: 0.001
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01
   InLocalSpace: 0
   Interpolate: 1
   CanCommitToTransform: 0
---- !u!114 &-4066726096454069003
+--- !u!114 &4098144853098280424
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -351,7 +351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 3.5
   runSpeedOffset: 2
-  rotationSpeed: 1.5
+  rotationSpeed: 3.5
   defaultInitialPositionOnPlane: {x: -4, y: 4}
   networkPlayerState:
     m_InternalValue: 0

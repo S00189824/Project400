@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
 
-public class PlayersManager : NetworkSingleton<PlayersManager>
+public class PlayersManager : Singleton<PlayersManager>
 {
     NetworkVariable<int> playersInGame = new NetworkVariable<int>();
 
@@ -20,13 +20,22 @@ public class PlayersManager : NetworkSingleton<PlayersManager>
         NetworkManager.Singleton.OnClientConnectedCallback += (id) =>
         {
             if (IsServer)
+            {
+                Logger.Instance.LogInfo($"{id} Just connected. . .");
                 playersInGame.Value++;
+            }
+                
         };
 
         NetworkManager.Singleton.OnClientDisconnectCallback += (id) =>
         {
             if (IsServer)
+            {
+                Logger.Instance.LogInfo($"{id} Just Disconnected. . .");
                 playersInGame.Value--;
+
+            }
+                
         };
     }
 }
