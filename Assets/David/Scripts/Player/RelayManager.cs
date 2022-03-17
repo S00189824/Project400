@@ -87,7 +87,7 @@ public class RelayManager : Singleton<RelayManager>
 
         Transport.SetRelayServerData(relayJoinData.IPv4Address, relayJoinData.Port, relayJoinData.AllocationIDBytes,
             relayJoinData.Key, relayJoinData.ConnectionData, relayJoinData.HostConnectionData);
-
+        Debug.Log(relayJoinData);
         Logger.Instance.LogInfo($"Client Joined Game With Join Code: {joinCode}");
 
         return relayJoinData;

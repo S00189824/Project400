@@ -1,22 +1,60 @@
+using LobbyRelay.UI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class ScreenManager : MonoBehaviour
+namespace Unity.Multiplayer.P400.Visual
 {
 
-    public InputField Email;
-    public InputField Password;
-    public InputField PasswordConfirmation;
-
-
-    Transform Canvas;
-
-    void Start()
+    [RequireComponent(typeof(CanvasGroup))]
+    public class ScreenManager : Singleton<ScreenManager>
     {
-        Canvas = GameObject.FindObjectOfType<Canvas>().transform;
-    }
+        UIPanelBase panelBase;
+        Transform Canvas;
+        private static ScreenManager s_Instance = null;
+        private PopupPanel m_ResponsePopup;
 
-    
+        [SerializeField]
+        private Button PlayGame;
+
+        [SerializeField]
+        private Button ExitGame;
+
+        GameObject MenuStartScreen;
+
+        void Start()
+        {
+            Canvas = GameObject.FindObjectOfType<Canvas>().transform;
+
+            MenuStartScreen = GameObject.Find("StartLevel");
+        }
+
+        private void Awake()
+        {
+            Cursor.visible = true;
+        }
+
+
+        public static ScreenManager Instance
+        {
+            get
+            {
+                if (s_Instance == null)
+                {
+                    s_Instance = FindObjectOfType<ScreenManager>();
+                }
+
+                return s_Instance;
+            }
+        }
+
+        public void OpenMenuScene()
+        {
+            MenuStartScreen.SetActive(true);
+        }
+    }
 }
+
+
