@@ -74,11 +74,11 @@ namespace LobbyRelay
         ClientUserApproved = 104,
         ClientUserSeekingDisapproval = 105,
         EndGame = 106,
-
+        InstructionsShown = 204,
         StartCountdown = 200,
         CancelCountdown = 201,
         CompleteCountdown = 202,
-
+        GameBeginning = 203,
         DisplayErrorPopup = 300,
     }
 

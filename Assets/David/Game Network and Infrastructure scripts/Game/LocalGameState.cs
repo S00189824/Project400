@@ -14,7 +14,7 @@ namespace LobbyRelay
     {
         Menu = 1,
         Lobby = 2,
-        JoinMenu = 4,
+        JoinMenu = 3,
     }
 
     /// <summary>

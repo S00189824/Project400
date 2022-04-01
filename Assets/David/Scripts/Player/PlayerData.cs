@@ -1,24 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 
-public class PlayerData
+public class PlayerData : INetworkSerializable
 {
     public string name;
-    public float health;
-    public int level;
+    public ulong id;
+    public int score;
+    public PlayerData() { } // A default constructor is explicitly required for serialization.
+    public PlayerData(string name, ulong id, int score = 0) { this.name = name; this.id = id; this.score = score; }
 
-    public PlayerData(string name, float health, int level)
+    public void NetworkSerialize<T>(BufferSerializer<T> serializer) where T : IReaderWriter
     {
-        this.name = name;
-        this.health = health;
-        this.level = level;
-
-        
-    }
-
-    public override string ToString()
-    {
-        return $"{name} is at {health} HP. Your level is {level}"; 
+        serializer.SerializeValue(ref name);
+        serializer.SerializeValue(ref id);
+        serializer.SerializeValue(ref score);
     }
 }
