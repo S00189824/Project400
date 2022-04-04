@@ -58,46 +58,46 @@ namespace LobbyRelay.vivox
         /// Once in a lobby, start joining a voice channel for that lobby. Be sure to complete Initialize first.
         /// </summary>
         /// <param name="onComplete">Called whether the channel is successfully joined or not.</param>
-        public void JoinLobbyChannel(string lobbyId, Action<bool> onComplete)
-        {
-            if (!m_hasInitialized || m_loginSession.State != LoginState.LoggedIn)
-            {
-                UnityEngine.Debug.LogWarning("Can't join a Vivox audio channel, as Vivox login hasn't completed yet.");
-                onComplete?.Invoke(false);
-                return;
-            }
+        //public void JoinLobbyChannel(string lobbyId, Action<bool> onComplete)
+        //{
+        //    if (!m_hasInitialized || m_loginSession.State != LoginState.LoggedIn)
+        //    {
+        //        UnityEngine.Debug.LogWarning("Can't join a Vivox audio channel, as Vivox login hasn't completed yet.");
+        //        onComplete?.Invoke(false);
+        //        return;
+        //    }
 
-            ChannelType channelType = ChannelType.NonPositional;
-            Channel channel = new Channel(lobbyId + "_voice", channelType, null);
-            m_channelSession = m_loginSession.GetChannelSession(channel);
-            string token = m_channelSession.GetConnectToken();
+        //    ChannelType channelType = ChannelType.NonPositional;
+        //    Channel channel = new Channel(lobbyId + "_voice", channelType, null);
+        //    m_channelSession = m_loginSession.GetChannelSession(channel);
+        //    string token = m_channelSession.GetConnectToken();
 
-            m_channelSession.BeginConnect(true, false, true, token, result =>
-            {
-                try
-                {
-                    // Special case: It's possible for the player to leave the lobby between the time we called BeginConnect and the time we hit this callback.
-                    // If that's the case, we should abort the rest of the connection process.
-                    if (m_channelSession.ChannelState == ConnectionState.Disconnecting || m_channelSession.ChannelState == ConnectionState.Disconnected)
-                    {
-                        UnityEngine.Debug.LogWarning("Vivox channel is already disconnecting. Terminating the channel connect sequence.");
-                        HandleEarlyDisconnect();
-                        return;
-                    }
+        //    m_channelSession.BeginConnect(true, false, true, token, result =>
+        //    {
+        //        try
+        //        {
+        //            // Special case: It's possible for the player to leave the lobby between the time we called BeginConnect and the time we hit this callback.
+        //            // If that's the case, we should abort the rest of the connection process.
+        //            if (m_channelSession.ChannelState == ConnectionState.Disconnecting || m_channelSession.ChannelState == ConnectionState.Disconnected)
+        //            {
+        //                UnityEngine.Debug.LogWarning("Vivox channel is already disconnecting. Terminating the channel connect sequence.");
+        //                HandleEarlyDisconnect();
+        //                return;
+        //            }
 
-                    m_channelSession.EndConnect(result);
-                    onComplete?.Invoke(true);
-                    foreach (VivoxUserHandler userHandler in m_userHandlers)
-                        userHandler.OnChannelJoined(m_channelSession);
-                }
-                catch (Exception ex)
-                {
-                    UnityEngine.Debug.LogWarning("Vivox failed to connect: " + ex.Message);
-                    onComplete?.Invoke(false);
-                    m_channelSession?.Disconnect();
-                }
-            });
-        }
+        //            m_channelSession.EndConnect(result);
+        //            onComplete?.Invoke(true);
+        //            foreach (VivoxUserHandler userHandler in m_userHandlers)
+        //                userHandler.OnChannelJoined(m_channelSession);
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            UnityEngine.Debug.LogWarning("Vivox failed to connect: " + ex.Message);
+        //            onComplete?.Invoke(false);
+        //            m_channelSession?.Disconnect();
+        //        }
+        //    });
+        //}
 
         /// <summary>
         /// To be called when leaving a lobby.
@@ -120,8 +120,8 @@ namespace LobbyRelay.vivox
                 m_channelSession?.Disconnect(
                     (result) => { m_loginSession.DeleteChannelSession(id); m_channelSession = null; });
             }
-            foreach (VivoxUserHandler userHandler in m_userHandlers)
-                userHandler.OnChannelLeft();
+            //foreach (VivoxUserHandler userHandler in m_userHandlers)
+            //    userHandler.OnChannelLeft();
         }
 
         private void HandleEarlyDisconnect()

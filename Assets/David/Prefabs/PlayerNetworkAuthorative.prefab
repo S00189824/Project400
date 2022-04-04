@@ -365,7 +365,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3880174368782128074}
   m_Layer: 0
-  m_Name: Follow Target
+  m_Name: FollowTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

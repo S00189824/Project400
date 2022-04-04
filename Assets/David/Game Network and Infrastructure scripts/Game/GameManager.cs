@@ -230,7 +230,7 @@ namespace LobbyRelay
             if (m_localUser.IsHost)
             {
                 StartRelayConnection();
-                StartVivoxJoin();
+                //StartVivoxJoin();
             }
             else
             {
@@ -281,20 +281,20 @@ namespace LobbyRelay
             }
         }
 
-        private void StartVivoxJoin()
-        {
-            m_vivoxSetup.JoinLobbyChannel(m_localLobby.LobbyID, OnVivoxJoinComplete);
+        //private void StartVivoxJoin()
+        //{
+        //    m_vivoxSetup.JoinLobbyChannel(m_localLobby.LobbyID, OnVivoxJoinComplete);
 
-            void OnVivoxJoinComplete(bool didSucceed)
-            {
-                if (!didSucceed)
-                {
-                    Debug.LogError("Vivox connection failed! Retrying in 5s...");
-                    StartCoroutine(RetryConnection(StartVivoxJoin, m_localLobby.LobbyID));
-                    return;
-                }
-            }
-        }
+        //    void OnVivoxJoinComplete(bool didSucceed)
+        //    {
+        //        if (!didSucceed)
+        //        {
+        //            Debug.LogError("Vivox connection failed! Retrying in 5s...");
+        //            StartCoroutine(RetryConnection(StartVivoxJoin, m_localLobby.LobbyID));
+        //            return;
+        //        }
+        //    }
+        //}
 
         private void StartRelayConnection()
         {

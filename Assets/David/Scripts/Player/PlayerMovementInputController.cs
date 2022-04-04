@@ -27,7 +27,7 @@ public class PlayerMovementInputController : MonoBehaviour
     bool runPressed;
 
     CinemachineFreeLook cinemachine;
-    Camera camera;
+    //Camera camera;
 
     private void Awake()
     {
@@ -62,7 +62,7 @@ public class PlayerMovementInputController : MonoBehaviour
 
     public void Start()
     {
-        camera = Camera.main;
+        //camera = Camera.main;
         animator = GetComponent<Animator>();
         characterController = GetComponent<CharacterController>();
 
@@ -104,7 +104,7 @@ public class PlayerMovementInputController : MonoBehaviour
         //    characterController.Move(directionToMoveThisFrame);
         //}
 
-        directionToMoveThisFrame = camera.transform.TransformDirection(currentMovement);
+        //directionToMoveThisFrame = camera.transform.TransformDirection(currentMovement);
         directionToMoveThisFrame = new Vector3(currentMovement.x, 0, currentMovement.y) * (runPressed ? RunningSpeed : WalkingSpeed) * Time.deltaTime;
         characterController.Move(directionToMoveThisFrame);
 

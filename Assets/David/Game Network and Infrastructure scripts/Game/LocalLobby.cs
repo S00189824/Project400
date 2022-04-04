@@ -25,6 +25,8 @@ namespace LobbyRelay
         Dictionary<string, LobbyUser> m_LobbyUsers = new Dictionary<string, LobbyUser>();
         public Dictionary<string, LobbyUser> LobbyUsers => m_LobbyUsers;
 
+        
+
         #region LocalLobbyData
         public struct LobbyData
         {
@@ -33,8 +35,10 @@ namespace LobbyRelay
             public string RelayCode { get; set; }
             public string LobbyName { get; set; }
             public bool Private { get; set; }
+            public long RelayNGOCode_LastEdit { get; set; }
             public int MaxPlayerCount { get; set; }
             public LobbyState State { get; set; }
+            public string RelayNGOCode { get; set; }
             public LobbyColor Color { get; set; }
             public long State_LastEdit { get; set; }
             public long Color_LastEdit { get; set; }
@@ -45,8 +49,10 @@ namespace LobbyRelay
                 LobbyCode = existing.LobbyCode;
                 RelayCode = existing.RelayCode;
                 LobbyName = existing.LobbyName;
+                RelayNGOCode = existing.RelayNGOCode;
                 Private = existing.Private;
                 MaxPlayerCount = existing.MaxPlayerCount;
+                RelayNGOCode_LastEdit = existing.RelayNGOCode_LastEdit;
                 State = existing.State;
                 Color = existing.Color;
                 State_LastEdit = existing.State_LastEdit;
@@ -57,6 +63,7 @@ namespace LobbyRelay
             {
                 LobbyID = null;
                 LobbyCode = lobbyCode;
+                RelayNGOCode = null;
                 RelayCode = null;
                 LobbyName = null;
                 Private = false;
@@ -65,6 +72,7 @@ namespace LobbyRelay
                 Color = LobbyColor.None;
                 State_LastEdit = 0;
                 Color_LastEdit = 0;
+                RelayNGOCode_LastEdit = 0;
             }
         }
 
@@ -177,6 +185,17 @@ namespace LobbyRelay
             {
                 m_data.State = value;
                 m_data.State_LastEdit = DateTime.Now.Ticks;
+                OnChanged(this);
+            }
+        }
+
+        public string RelayNGOCode
+        {
+            get => m_data.RelayNGOCode;
+            set
+            {
+                m_data.RelayNGOCode = value;
+                m_data.RelayNGOCode_LastEdit = DateTime.Now.Ticks;
                 OnChanged(this);
             }
         }

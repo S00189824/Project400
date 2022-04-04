@@ -42,7 +42,7 @@ public class PlayerControlAuthorative : NetworkBehaviour
         {
             transform.position = new Vector3(Random.Range(defaultInitialPositionOnPlane.x, defaultInitialPositionOnPlane.y), 0,
                    Random.Range(defaultInitialPositionOnPlane.x, defaultInitialPositionOnPlane.y));
-            PlayerCameraFollow.Instance.FollowPlayer(transform.Find("Follow Target"));
+            PlayerCameraFollow.Instance.FollowPlayer(transform.Find("FollowTarget"));
         }
     }
 
@@ -89,8 +89,8 @@ public class PlayerControlAuthorative : NetworkBehaviour
             inputPosition = direction * runSpeedOffset;
             UpdatePlayerStateServerRpc(PlayerState.Run);
         }
-        //else if (forwardInput < 0)
-            //UpdatePlayerStateServerRpc(PlayerState.ReverseWalk);
+        else if (forwardInput < 0)
+            UpdatePlayerStateServerRpc(PlayerState.Reverse_Walk);
 
         // client is responsible for moving itself
         characterController.SimpleMove(direction * (walkSpeed * Input.GetAxis("Vertical")));

@@ -56,24 +56,24 @@ namespace LobbyRelay.vivox
             }
         }
 
-        public void OnChannelJoined(IChannelSession channelSession) // Called after a connection is established, which begins once a lobby is joined.
-        {
-            m_channelSession = channelSession;
-            m_channelSession.Participants.AfterKeyAdded += OnParticipantAdded;
-            m_channelSession.Participants.BeforeKeyRemoved += BeforeParticipantRemoved;
-            m_channelSession.Participants.AfterValueUpdated += OnParticipantValueUpdated;
-        }
+        //public void OnChannelJoined(IChannelSession channelSession) // Called after a connection is established, which begins once a lobby is joined.
+        //{
+        //    m_channelSession = channelSession;
+        //    m_channelSession.Participants.AfterKeyAdded += OnParticipantAdded;
+        //    m_channelSession.Participants.BeforeKeyRemoved += BeforeParticipantRemoved;
+        //    m_channelSession.Participants.AfterValueUpdated += OnParticipantValueUpdated;
+        //}
 
-        public void OnChannelLeft() // Called when we leave the lobby.
-        {
-            if (m_channelSession != null) // It's possible we'll attempt to leave a channel that isn't joined, if we leave the lobby while Vivox is connecting.
-            {
-                m_channelSession.Participants.AfterKeyAdded -= OnParticipantAdded;
-                m_channelSession.Participants.BeforeKeyRemoved -= BeforeParticipantRemoved;
-                m_channelSession.Participants.AfterValueUpdated -= OnParticipantValueUpdated;
-                m_channelSession = null;
-            }
-        }
+        //public void OnChannelLeft() // Called when we leave the lobby.
+        //{
+        //    if (m_channelSession != null) // It's possible we'll attempt to leave a channel that isn't joined, if we leave the lobby while Vivox is connecting.
+        //    {
+        //        m_channelSession.Participants.AfterKeyAdded -= OnParticipantAdded;
+        //        m_channelSession.Participants.BeforeKeyRemoved -= BeforeParticipantRemoved;
+        //        m_channelSession.Participants.AfterValueUpdated -= OnParticipantValueUpdated;
+        //        m_channelSession = null;
+        //    }
+        //}
 
         /// <summary>
         /// To be called whenever a new Participant is added to the channel, using the events from Vivox's custom dictionary.
@@ -104,37 +104,37 @@ namespace LobbyRelay.vivox
                 m_lobbyUserVolumeUI.DisableVoice(true);
             }
         }
-        private void OnParticipantValueUpdated(object sender, ValueEventArg<string, IParticipant> valueEventArg)
-        {
-            var source = (VivoxUnity.IReadOnlyDictionary<string, IParticipant>)sender;
-            var participant = source[valueEventArg.Key];
-            var username = participant.Account.DisplayName;
-            string property = valueEventArg.PropertyName;
+        //private void OnParticipantValueUpdated(object sender, ValueEventArg<string, IParticipant> valueEventArg)
+        //{
+        //    var source = (VivoxUnity.IReadOnlyDictionary<string, IParticipant>)sender;
+        //    var participant = source[valueEventArg.Key];
+        //    var username = participant.Account.DisplayName;
+        //    string property = valueEventArg.PropertyName;
 
-            if (username == m_id)
-            {
-                if (property == "UnavailableCaptureDevice")
-                {
-                    if (participant.UnavailableCaptureDevice)
-                    {
-                        m_lobbyUserVolumeUI.DisableVoice(false);
-                        participant.SetIsMuteForAll(m_vivoxId, true, null); // Note: If you add more places where a player might be globally muted, a state machine might be required for accurate logic.
-                    }
-                    else
-                    {
-                        m_lobbyUserVolumeUI.EnableVoice(false);
-                        participant.SetIsMuteForAll(m_vivoxId, false, null); // Also note: This call is asynchronous, so it's possible to exit the lobby before this completes, resulting in a Vivox error.
-                    }
-                }
-                else if (property == "IsMutedForAll")
-                {
-                    if (participant.IsMutedForAll)
-                        m_lobbyUserVolumeUI.DisableVoice(false);
-                    else
-                        m_lobbyUserVolumeUI.EnableVoice(false);
-                }
-            }
-        }
+        //    if (username == m_id)
+        //    {
+        //        if (property == "UnavailableCaptureDevice")
+        //        {
+        //            if (participant.UnavailableCaptureDevice)
+        //            {
+        //                m_lobbyUserVolumeUI.DisableVoice(false);
+        //                participant.SetIsMuteForAll(m_vivoxId, true, null); // Note: If you add more places where a player might be globally muted, a state machine might be required for accurate logic.
+        //            }
+        //            else
+        //            {
+        //                m_lobbyUserVolumeUI.EnableVoice(false);
+        //                participant.SetIsMuteForAll(m_vivoxId, false, null); // Also note: This call is asynchronous, so it's possible to exit the lobby before this completes, resulting in a Vivox error.
+        //            }
+        //        }
+        //        else if (property == "IsMutedForAll")
+        //        {
+        //            if (participant.IsMutedForAll)
+        //                m_lobbyUserVolumeUI.DisableVoice(false);
+        //            else
+        //                m_lobbyUserVolumeUI.EnableVoice(false);
+        //        }
+        //    }
+        //}
 
         public void OnVolumeSlide(float volumeNormalized)
         {

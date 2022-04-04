@@ -23,6 +23,11 @@ namespace LobbyRelay.relay
         protected LobbyUser m_localUser;
         protected Action<bool, RelayUtpClient> m_onJoinComplete;
 
+        public static string AddressFromEndpoint(NetworkEndPoint endpoint)
+        {
+            return endpoint.Address.Split(':')[0];
+        }
+
         public void BeginRelayJoin(LocalLobby localLobby, LobbyUser localUser, Action<bool, RelayUtpClient> onJoinComplete)
         {
             m_localLobby = localLobby;
@@ -37,7 +42,7 @@ namespace LobbyRelay.relay
         /// Determine the server endpoint for connecting to the Relay server, for either an Allocation or a JoinAllocation.
         /// If DTLS encryption is available, and there's a secure server endpoint available, use that as a secure connection. Otherwise, just connect to the Relay IP unsecured.
         /// </summary>
-        protected NetworkEndPoint GetEndpointForAllocation(List<RelayServerEndpoint> endpoints, string ip, int port, out bool isSecure)
+        public static NetworkEndPoint GetEndpointForAllocation(List<RelayServerEndpoint> endpoints, string ip, int port, out bool isSecure)
         {
 #if ENABLE_MANAGED_UNITYTLS
                 foreach (RelayServerEndpoint endpoint in endpoints)

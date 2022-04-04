@@ -331,8 +331,6 @@ GameObject:
   - component: {fileID: 2766051518225111497}
   - component: {fileID: 2766051518225111501}
   - component: {fileID: 2766051518225111500}
-  - component: {fileID: 2766051518225111499}
-  - component: {fileID: 2766051518225111498}
   m_Layer: 5
   m_Name: LobbyCodeCanvas
   m_TagString: Untagged
@@ -381,50 +379,6 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
---- !u!114 &2766051518225111499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2766051518225111496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c398ac87064f12941a7547939677188c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_onVisibilityChange:
-    m_PersistentCalls:
-      m_Calls: []
-  m_outputText: {fileID: 2766051518487141344}
-  m_codeType: 0
---- !u!114 &2766051518225111498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2766051518225111496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28995140c4e5cb34ea3cb9ca4d7d872b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnObservedUpdated:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2766051518225111499}
-        m_TargetAssemblyTypeName: DisplayCodeUI, Assembly-CSharp
-        m_MethodName: ObservedUpdated
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &2766051518379928803
 GameObject:
   m_ObjectHideFlags: 0

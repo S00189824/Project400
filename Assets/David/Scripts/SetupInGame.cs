@@ -87,7 +87,7 @@ public class SetupInGame : MonoBehaviour, IReceiveMessages
             CreateNetworkManager();
         }
 
-        else if (type == MessageType.MinigameBeginning)
+        else if (type == MessageType.GameBeginning)
         {
             if (!m_hasConnectedViaNGO)
             {
