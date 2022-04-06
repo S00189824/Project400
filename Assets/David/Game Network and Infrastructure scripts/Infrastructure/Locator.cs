@@ -56,6 +56,7 @@ namespace LobbyRelay
             Provide(new Messenger());
             Provide(new UpdateSlowNoop());
             Provide(new IdentityNoop());
+            Provide(new ngo.InGameInputHandler());
 
             FinishConstruction();
         }
@@ -98,6 +99,11 @@ namespace LobbyRelay
 
         public IIdentity Identity => Locate<IIdentity>();
         public void Provide(IIdentity identity) { ProvideAny(identity); }
+
+        public ngo.IInGameInputHandler InGameInputHandler => Locate<ngo.IInGameInputHandler>();
+        public void Provide(ngo.IInGameInputHandler inputHandler) { ProvideAny(inputHandler); }
+
+        // As you add more Provided types, be sure their default implementations are included in the constructor.
 
         // As you add more Provided types, be sure their default implementations are included in the constructor.
     }
