@@ -62,6 +62,11 @@ public class UIManager : Singleton<UIManager>
                 Logger.Instance.LogInfo("Host started...");
             else
                 Logger.Instance.LogInfo("Unable to start host...");
+
+            if(NetworkManager.Singleton.StartHost())
+            {
+                Logger.Instance.LogInfo($"Ping: {NetworkManager.NetworkTickSystem.TickRate}");
+            }
         });
 
         // START CLIENT
