@@ -131,27 +131,5 @@ namespace Unity.Multiplayer.Samples.BossRoom.Visual
             m_LastSpeed = speed;
         }
 
-#if UNITY_EDITOR
-        /// <summary>
-        /// Precomputes the hashed value for the animator-variable we care about.
-        /// (This way we don't have to call Animator.StringToHash() at runtime.)
-        /// Also auto-initializes variables when possible.
-        /// </summary>
-        private void OnValidate()
-        {
-            m_AnimatorVariableHash = Animator.StringToHash(m_AnimatorVariable);
-            Assert.IsTrue(m_AnimatorVariableHash != 0);
-
-            if (m_AudioSource == null)
-            {
-                m_AudioSource = GetComponent<AudioSource>();
-            }
-            Assert.IsNotNull(m_AudioSource);
-
-            Assert.IsNotNull(m_WalkFootstepAudioClip);
-
-            Assert.IsNotNull(m_RunFootstepAudioClip);
-        }
-#endif
     }
 }
